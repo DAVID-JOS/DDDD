@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mine App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚀 Mine App (Frontend)</h1>
+
+  <div>
+    <input id="walletAddress" placeholder="Enter Wallet Address">
+    <button onclick="createWallet()">Create Wallet</button>
+  </div>
+
+  <div>
+    <button onclick="getWallets()">Show All Wallets</button>
+  </div>
+
+  <div>
+    <h3>💸 Transfer to Moniepoint</h3>
+    <input id="accountNumber" placeholder="Account Number"><br>
+    <input id="bankCode" placeholder="Bank Code"><br>
+    <input id="amountUSD" placeholder="Amount in USD"><br>
+    <button onclick="transfer()">Send</button>
+  </div>
+
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+  </html>
